@@ -215,3 +215,41 @@ int main() {
         printf("\n");
  }
 } */
+
+//  10 20 30 40 50
+//  20 30 40 50 60
+//  30 40 50 60 70
+//  40 50 60 70 80
+//  50 60 70 80 90
+//  60 70 80 90100
+/*  #include<stdio.h>
+ int main(){
+    
+    for(int i = 0; i<=5; i++){
+        for(int j = 1; j<= 5; j++){
+            printf("%3d", (i + j) * 10);
+        }
+        printf("\n");
+    }
+ }
+ */
+
+
+//    *  *  *  *  *  *
+//   *  *  *  *  *  *  *  *  *
+//   *  *  *  *  *  *
+//   *  *  *  *  *  *  *  *  *
+//   *  *  *  *  *  *
+/*  #include<stdio.h>
+ int main()
+ {
+    int count;
+    for(int i = 1; i<= 5; i++){
+        count = (i % 2 != 0) ? 6 : 9;
+        for(int j = 1; j<= count; j++){
+            printf("%3c", '*' );
+        }
+        printf("\n");
+    }
+ } */
+
