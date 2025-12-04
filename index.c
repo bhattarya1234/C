@@ -166,6 +166,22 @@ int main() {
 }
 
 
+// A
+// B       B
+// C       C       C
+// D       D       D       D
+// E       E       E       E       E
+#include<stdio.h>
+int main(){
+    char patt[] = "ABCDE";
+    for(int i = 0; i < 5; i++){
+        for(int j = 0; j < i + 1; j++){
+            printf("%c\t", patt[i]);
+        }
+        printf("\n");
+    }
+}
+
  /*  1
   2  2
   3  3  3
@@ -253,3 +269,31 @@ int main() {
     }
  } */
 
+
+// *
+// **
+// ***
+// ****
+// *****
+// ******
+// *******
+// ********
+// *
+// **
+// ***
+// ****
+// *****
+// ******
+// *******
+// ********
+#include<stdio.h>
+int main(){
+    for(int k = 0; k< 2; k++){
+    for(int i = 0; i < 8; i++){
+        for(int j = 0; j < i + 1 ; j++){
+            printf("*");
+        }
+        printf("\n");
+    }
+}
+}
